@@ -1,0 +1,39 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+
+# IDEA project files
+*.iml
+.idea/
+01.core/target/
+02.web/target/
+03.mongodb/target/
+04.redis/target/
+05.dubbo-service/target/
+06.dubbo-client/target/
+
+# others
+ant.properties
+build.xml
+META-INF
+01.core/yhapi-core.iml
+02.web/myhapi-web.iml
+03.mongodb/test-mongodb.iml
+04.redis/test-redis.iml
+xin.iml

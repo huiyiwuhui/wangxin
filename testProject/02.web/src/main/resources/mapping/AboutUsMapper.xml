@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yhfund.app.dao.AboutUsDao" >
+
+	<select id="searchAboutUs"  parameterType="map" resultType="com.yhfund.app.entities.aboutUs.AboutUs" >
+		select 
+			  id,
+			  imgurl,
+			  message,
+			  time
+		from app_aboutus
+	</select>
+</mapper>
