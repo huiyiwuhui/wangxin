@@ -7,6 +7,8 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by 王鑫 on 2016/8/23.
  */
@@ -28,14 +30,22 @@ public class UserService {
 
     }
 
-    /**
-     *
-     * @param name
-     * @return
-     */
-    public User findUserByName(String name){
+//    /**
+//     *
+//     * @param name
+//     * @return
+//     */
+//    public User findUserByName(String name){
+//
+//        return mongoTemplate.findOne(new Query(Criteria.where("name").is(name)), User.class, USER_COLLECTION);
+//
+//    }
 
-        return mongoTemplate.findOne(new Query(Criteria.where("name").is(name)), User.class, USER_COLLECTION);
+    public List<User> findUserByName(String name){
+
+        return mongoTemplate.find(new Query(Criteria.where("name").is(name)), User.class, USER_COLLECTION);
 
     }
+
+
 }

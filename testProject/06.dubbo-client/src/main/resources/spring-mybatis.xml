@@ -43,7 +43,6 @@
             </list>
         </property>
     </bean>
-
-    <import resource="mongo-config.xml"/>
+    <import resource="spring-dubbo-consumer.xml"/>
 
 </beans>

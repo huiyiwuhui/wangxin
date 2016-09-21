@@ -14,7 +14,7 @@
 
 
 
-    <!-- 使用annotation 自动注册bean,并保证@Required,@Autowired的属性被注入 -->
+<!-- 使用annotation 自动注册bean,并保证@Required,@Autowired的属性被注入 -->
     <context:component-scan base-package="com.wangxin">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
@@ -39,7 +39,7 @@
         <property name="locations">
             <list>
                 <!-- 标准配置 -->
-                <!--<value>classpath*:/jdbc.properties</value>-->
+                <value>classpath*:/redis.properties</value>
             </list>
         </property>
     </bean>

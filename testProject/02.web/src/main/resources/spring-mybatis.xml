@@ -40,11 +40,11 @@
             <list>
                 <!-- 标准配置 -->
                 <!--<value>classpath*:/jdbc.properties</value>-->
-                <value>classpath*:/memcache.properties</value>
+                <!--<value>classpath*:/memcache.properties</value>-->
             </list>
         </property>
     </bean>
 
     <!--<import resource="spring-aop.xml"/>-->
-    <import resource="memcache.xml"/>
+    <!--<import resource="memcache.xml"/>-->
 </beans>

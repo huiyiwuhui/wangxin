@@ -16,26 +16,26 @@ import javax.servlet.http.HttpServletResponse;
 public class TestController {
     private Logger logger = Logger.getLogger(getClass());
 
-    @Autowired
-    private  BService bService;
+//    @Autowired
+//    private  BService bService;
 
     @RequestMapping(value = "/test1")
     public void list(HttpServletRequest request, HttpServletResponse resp) {
         System.out.println("controller");
         System.out.println("1111111111");
-        bService.fooB();
-        bService.fooB();
+//        bService.fooB();
+///        bService.fooB();
     }
 
-
-    @RequestMapping(value = "/json")
-    public void reaJson(@RequestBody String value, HttpServletRequest request, HttpServletResponse resp) {
-        System.out.println(value);
-
-        String json ="{\"sss\":\"www.baidu.comc.cn\"}";
-        System.out.println();
-    }
-
+//
+//    @RequestMapping(value = "/json")
+//    public void reaJson(@RequestBody String value, HttpServletRequest request, HttpServletResponse resp) {
+//        System.out.println(value);
+//
+//        String json ="{\"sss\":\"www.baidu.comc.cn\"}";
+//        System.out.println();
+//    }
+//
 
 
 }

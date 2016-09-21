@@ -23,15 +23,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-            <!-- 表示开发的时候引入，发布的时候不会加载此包 -->
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-aop</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
         </dependency>
         <dependency>
             <groupId>cglib</groupId>
@@ -40,53 +33,46 @@
         </dependency>
 
         <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-aspects</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
         </dependency>
         <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-beans</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
         </dependency>
         <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-context</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
         </dependency>
         <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-context-support</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
         </dependency>
         <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-core</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
         </dependency>
         <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-expression</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
         </dependency>
         <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-jdbc</artifactId>
-        </dependency>
-       <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-tx</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
         </dependency>
         <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-web</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
         </dependency>
         <dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-		</dependency>
-        <dependency>
-            <groupId>net.sf.dozer</groupId>
-            <artifactId>dozer</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>commons-dbcp</groupId>
-            <artifactId>commons-dbcp</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
@@ -96,49 +82,88 @@
             <artifactId>mybatis-spring</artifactId>
         </dependency>
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc</artifactId>
         </dependency>
-        <!-- 映入JSON -->
+
+        <!--对象转换利器-->
         <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
+            <groupId>net.sf.dozer</groupId>
+            <artifactId>dozer</artifactId>
         </dependency>
-        <!-- 上传组件包 -->
+
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+        </dependency>
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
         </dependency>
         <dependency>
-          <groupId>dom4j</groupId>
-          <artifactId>dom4j</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>quartz</groupId>
-            <artifactId>quartz</artifactId>
-        </dependency>
-        <dependency>
             <groupId>commons-httpclient</groupId>
             <artifactId>commons-httpclient</artifactId>
         </dependency>
-
-         <dependency>
-            <groupId>com.oracle</groupId>
-            <artifactId>ojdbc</artifactId>
-        </dependency>
-
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
         <dependency>
-			<groupId>com.googlecode.xmemcached</groupId>
-			<artifactId>xmemcached</artifactId>
-		</dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+
+
+
+
+        <!-- 映入JSON -->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <classifier>jdk15</classifier>
+            <version>2.2</version>
+        </dependency>
+
+
+
+
+
+        <!--定时任务-->
+        <dependency>
+            <groupId>quartz</groupId>
+            <artifactId>quartz</artifactId>
+        </dependency>
+
+
+
+        <!--- memcacached -->
+        <dependency>
+            <groupId>com.googlecode.xmemcached</groupId>
+            <artifactId>xmemcached</artifactId>
+        </dependency>
+
+
+        <!--日志-->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+        </dependency>
+
+        <!--日志工具-->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -148,24 +173,19 @@
             <artifactId>jcl-over-slf4j</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-        </dependency>
+        <!--基于java1.5 的加密算法实现-->
         <dependency>
             <groupId>bcprov</groupId>
             <artifactId>jdk16</artifactId>
         </dependency>
+
+        <!--IOS推送-->
         <dependency>
             <groupId>javapns</groupId>
             <artifactId>jdk16</artifactId>
         </dependency>
 
-        <!--aspectj -->
+        <!--aspectj   处理事务和AOP-->
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjrt</artifactId>
@@ -176,35 +196,62 @@
             <artifactId>aspectjweaver</artifactId>
             <version>1.8.6</version>
         </dependency>
-		
-		<!-- testing begin -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.10</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			 <version>3.1.0.RELEASE</version>
-			<scope>test</scope>
-		</dependency>
 
+        <!-- testing begin -->
         <dependency>
-            <groupId>net.sf.json-lib</groupId>
-            <artifactId>json-lib</artifactId>
-            <classifier>jdk15</classifier>
-            <version>2.2</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>3.1.0.RELEASE</version>
+            <scope>test</scope>
         </dependency>
 
+
+        <!--解析XML -->
         <dependency>
             <groupId>org.jdom</groupId>
             <artifactId>jdom2</artifactId>
             <version>2.0.5</version>
         </dependency>
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+        </dependency>
 
 
     </dependencies>
 
+
+
+    <build>
+        <plugins>
+            <!-- compile -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+
+
+            <!-- test -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.16</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
 </project>
