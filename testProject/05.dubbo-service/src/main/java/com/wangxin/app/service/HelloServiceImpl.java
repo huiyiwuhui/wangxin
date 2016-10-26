@@ -2,6 +2,9 @@ package com.wangxin.app.service;
 
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Administra on 2016/9/19.
  */
@@ -13,7 +16,13 @@ public class HelloServiceImpl implements HelloService{
     public void sayHello(String name){
         System.out.println(name+"    hello");
     }
-//    public String sayHello(String name){
-//       return name+"    hello";
-//    }
+
+    @Override
+    public List<String> getList() {
+        List<String> list = new ArrayList<String>();
+        list.add("wang");
+        list.add("xin");
+        list.add("你好");
+        return list;
+    }
 }
