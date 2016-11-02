@@ -2,6 +2,7 @@ package com.wangxin.app.controller;
 
 import com.wangxin.app.service.HelloService;
 import com.wangxin.app.service.HelloServiceClient;
+import com.wangxin.app.service.TestServiceClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,7 +17,9 @@ public class HelloController {
 
 	@Autowired
 	private HelloServiceClient helloServiceClient;
-	
+	@Autowired
+	private TestServiceClient testServiceClient;
+
 	@RequestMapping("/hello1")
 	public void hello1(HttpServletRequest request, HttpServletResponse resp){
 		helloServiceClient.sayHello();
@@ -33,6 +36,12 @@ public class HelloController {
 		for (String s : list) {
 			System.out.println(s);
 		}
+	}
+
+
+	@RequestMapping("/test1")
+	public void test1(HttpServletRequest request, HttpServletResponse resp){
+		testServiceClient.test1();
 	}
 
 

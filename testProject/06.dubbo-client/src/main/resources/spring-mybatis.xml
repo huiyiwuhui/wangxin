@@ -11,11 +11,8 @@
                         http://www.springframework.org/schema/aop/spring-aop.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd"
        default-lazy-init="true">
 
-    <!--<dubbo:annotation  />-->
-    <context:component-scan base-package="com.wangxin" use-default-filters="false">
-        <!--<context:include-filter type="annotation" expression="com.alibaba.dubbo.config.annotation.Reference" />-->
-        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-    </context:component-scan>
+    <dubbo:annotation package="com.wangxin.app.service" />
+    <context:component-scan base-package="com.wangxin" />
 
     <!-- 使用annotation 自动注册bean,并保证@Required,@Autowired的属性被注入 -->
     <!--<context:component-scan base-package="com.wangxin">-->
