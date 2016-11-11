@@ -10,13 +10,15 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
        <!--<module>01.core</module>-->
-        <!--<module>02.web</module>-->
+        <module>02.web</module>
         <!--<module>03.mongodb</module>-->
         <!--<module>04.redis</module>-->
+        <!-- <module>05.dubbo-service</module>-->
+        <!-- <module>06.dubbo-client</module>-->
         <!--<module>10.spring4</module>-->
-        <!--<module>11.spring3</module>-->
-        <module>05.dubbo-service</module>
-        <module>06.dubbo-client</module>
+        <module>11.spring3</module>
+        <module>12.spring_bigFileUpload</module>
+
     </modules>
 
     <properties>
@@ -220,13 +222,6 @@
                 <artifactId>commons-codec</artifactId>
                 <version>1.9</version>
             </dependency>
-
-            <dependency>
-                <groupId>commons-httpclient</groupId>
-                <artifactId>commons-httpclient</artifactId>
-                <version>3.0.1</version>
-            </dependency>
-
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
@@ -342,8 +337,12 @@
                 <version>2.1.0</version>
             </dependency>
 
-
-
+            <!-- SFTP-->
+            <dependency>
+                <groupId>com.jcraft</groupId>
+                <artifactId>jsch</artifactId>
+                <version>0.1.23</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

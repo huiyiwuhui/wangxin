@@ -46,5 +46,5 @@
     </bean>
 
     <!--<import resource="spring-aop.xml"/>-->
-    <!--<import resource="memcache.xml"/>-->
+    <import resource="spring-jdbc.xml"/>
 </beans>
