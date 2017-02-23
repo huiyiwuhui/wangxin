@@ -9,7 +9,7 @@ public class Member extends BaseModel{
 	
 	
 	private String id;
-	private String nickname;
+	private Object nickname;
 	
 	public Member(){}
 	
@@ -24,10 +24,10 @@ public class Member extends BaseModel{
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getNickname() {
+	public Object getNickname() {
 		return nickname;
 	}
-	public void setNickname(String nickname) {
+	public void setNickname(Object nickname) {
 		this.nickname = nickname;
 	}
 	

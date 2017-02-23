@@ -23,7 +23,7 @@ public class MemberDaoImpl extends RedisGeneratorDao<String,Member> implements M
 		boolean result = redisTemplate.execute(new RedisCallback<Boolean>() {
 			public Boolean doInRedis(RedisConnection connection)
 					throws DataAccessException {
-				RedisSerializer<String> serializer = getRedisSerializer();
+				RedisSerializer serializer = getRedisSerializer();
 				byte[] key  = serializer.serialize(member.getId());  
 				byte[] name = serializer.serialize(member.getNickname());  
 				return connection.setNX(key, name);  
@@ -41,7 +41,7 @@ public class MemberDaoImpl extends RedisGeneratorDao<String,Member> implements M
 		boolean result = redisTemplate.execute(new RedisCallback<Boolean>() {  
 			public Boolean doInRedis(RedisConnection connection)  
 					throws DataAccessException {  
-				RedisSerializer<String> serializer = getRedisSerializer();  
+				RedisSerializer serializer = getRedisSerializer();
 				for (Member member : list) {  
 					byte[] key  = serializer.serialize(member.getId());  
 					byte[] name = serializer.serialize(member.getNickname());  
@@ -80,7 +80,7 @@ public class MemberDaoImpl extends RedisGeneratorDao<String,Member> implements M
 		boolean result = redisTemplate.execute(new RedisCallback<Boolean>() {  
 			public Boolean doInRedis(RedisConnection connection)  
 					throws DataAccessException {  
-				RedisSerializer<String> serializer = getRedisSerializer();  
+				RedisSerializer serializer = getRedisSerializer();
 				byte[] key  = serializer.serialize(member.getId());  
 				byte[] name = serializer.serialize(member.getNickname());  
 				connection.set(key, name);  
@@ -110,4 +110,9 @@ public class MemberDaoImpl extends RedisGeneratorDao<String,Member> implements M
 		return result;  
 	}  
 
+
+	public boolean expire(String keyid,long expiration){
+		redisTemplate.expireAt()
+		return false;
+	}
 }

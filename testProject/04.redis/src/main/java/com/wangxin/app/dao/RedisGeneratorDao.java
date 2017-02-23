@@ -23,7 +23,7 @@ public abstract class RedisGeneratorDao<K extends Serializable, V extends Serial
 	 * 获取 RedisSerializer 
 	 * <br>------------------------------<br> 
 	 */  
-	protected RedisSerializer<String> getRedisSerializer() {  
-		return redisTemplate.getStringSerializer();  
+	protected RedisSerializer getRedisSerializer() {
+		return redisTemplate.getValueSerializer();
 	}
 }
